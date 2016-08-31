@@ -1,5 +1,5 @@
 # wse-plugin-cupertinoliveattachpicture
-The **ModuleCupertinoLiveAttachPicture** module for [Wowza Streaming Engine™ media server software](https://www.wowza.com/products/streaming-engine) enables you to add poster images to iOS audio-only live streams via the App Store compliance tehnique, live streams without compliance, and VOD streams.  
+The **CupertinoLiveAttachPicture** module for [Wowza Streaming Engine™ media server software](https://www.wowza.com/products/streaming-engine) enables you to add poster images to iOS audio-only live streams via the App Store compliance tehnique, live streams without compliance, and VOD streams.  
 
 ## Prerequisites
 Wowza Streaming Engine 4.0.0 or later is required.
