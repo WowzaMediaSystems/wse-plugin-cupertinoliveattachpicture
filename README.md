@@ -17,7 +17,7 @@ The **CupertinoLiveAttachPicture** module adds poster images through the additio
 
 > **Note:** You can use the Wowza Streaming Engine server-side API to include a broader set of ID3 metadata in your stream. For details see the [B]com.wowza.wms.media.mp3.model.idtags[/B] package in the [Wowza Streaming Engine Server-Side API User Guide](https://www.wowza.com/resources/WowzaStreamingEngine_ServerSideAPI.pdf) (PDF).
 
-For streams that comply with the App Store, you can test by using the following playback URL. Note that the [FONT=Courier New]?wowzaaudioonly[/FONT] querystring at the end of the URL is required.
+For streams that comply with the App Store, you can test by using the following playback URL. Note that the _?wowzaaudioonly_ querystring at the end of the URL is required.
 <pre>http://[wowza-ip-address]:1935/live/myStream/playlist.m3u8?wowzaaudioonly</pre>
 	
 ## More resources
