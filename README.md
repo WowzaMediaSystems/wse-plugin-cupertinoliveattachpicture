@@ -1,11 +1,11 @@
 # CupertinoLiveAttachPicture
-The **ModuleCupertinoLiveAttachPicture** module for [Wowza Streaming Engine™ media server software](https://www.wowza.com/products/streaming-engine) can be used to add a poster image to audio-only iOS streams. Poster images can be added to live streams that are produced to comply with [Apple App Store rules for 3G delivery](https://www.wowza.com/forums/content.php?208-How-to-create-Apple-App-Store-compliant-streams) as well as live and on-demand streams that don't comply with the Apple App Store.
+The **ModuleCupertinoLiveAttachPicture** module for [Wowza Streaming Engine™ media server software](https://www.wowza.com/products/streaming-engine) can be used to add a poster image to audio-only iOS streams that are produced to comply with [Apple App Store rules for 3G delivery](https://www.wowza.com/forums/content.php?208-How-to-create-Apple-App-Store-compliant-streams). You can also add poster images to live and on-demand streams that don't comply with the Apple App Store rules using the **ModuleCupertinoLiveAttachPicture2** and **ModuleCupertinoVODAttachPicture** modules respectively. All three modules are included in this repository.
 
 ## Prerequisites
 Wowza Streaming Engine 4.0.0 or later is required.
 
 ## Usage
-This module enables you to add poster images to iOS audio-only streams using one of the three files included in the module:
+There are three modules you can use to add poster images to a variety of iOS audio-only streams. To add a poster image to an audio-only iOS stream, use:
 
 * **CupertinoLiveAttachPicture.java** - For streams that are produced by using the audio-only rendition of the [App Store compliance](https://www.wowza.com/forums/content.php?208-How-to-create-Apple-App-Store-compliant-streams) technique.
 
@@ -13,7 +13,7 @@ This module enables you to add poster images to iOS audio-only streams using one
 
 * **CupertinoVODAttachPicture.java** - For on-demand audio streams that don't use the App Store compliance technique.
 
-The **CupertinoLiveAttachPicture** module adds poster images through the addition of ID3 metadata to the stream that's interpreted by the iOS player. The module searches for an image file in the Wowza media server's **[install-dir]/content** folder with the name **[stream-name].[extension]**, where **[extension]** can be **jpg**, **jpeg**, or **png**. For example, if your stream is named **myStream** and your image is in the JPG format, your poster image file must be named **myStream.jpg** for the module to use it as the poster image.
+These modules add poster images through the addition of ID3 metadata to the stream that's interpreted by the iOS player. The module searches for an image file in the Wowza media server's **[install-dir]/content** folder with the name **[stream-name].[extension]**, where **[extension]** can be **jpg**, **jpeg**, or **png**. For example, if your stream is named **myStream** and your image is in the JPG format, your poster image file must be named **myStream.jpg** for the module to use it as the poster image.
 
 > **Note:** You can use the Wowza Streaming Engine server-side API to include a broader set of ID3 metadata in your stream. For details see the [B]com.wowza.wms.media.mp3.model.idtags[/B] package in the [Wowza Streaming Engine Server-Side API User Guide](https://www.wowza.com/resources/WowzaStreamingEngine_ServerSideAPI.pdf) (PDF).
 
