@@ -35,4 +35,4 @@ To use the compiled version of the **CupertinoLiveAttachPicture** module, see [A
 [Wowza Media Systems, LLC](https://www.wowza.com/contact)
 
 ## License
-This code is distributed under the [Wowza Public License](https://github.com/WowzaMediaSystems/wse-plugin-cupertinoautomultibitratefilter/blob/master/LICENSE.txt).
+This code is distributed under the [Wowza Public License](/LICENSE.txt).
